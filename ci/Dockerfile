@@ -3,7 +3,5 @@ FROM shinchven/node-env:base-12
 MAINTAINER shinchven@gmail.com
 
 RUN curl -fsSL https://get.docker.com | bash -s docker \
-&& curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
-&& chmod +x /usr/local/bin/docker-compose \
-&& docker --version && docker-compose --version
-
+&& curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+&& chmod +x /usr/local/bin/docker-compose
