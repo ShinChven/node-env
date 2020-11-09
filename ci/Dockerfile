@@ -1,7 +1,7 @@
-FROM shinchven/node-env:base-12
+FROM shinchven/node-env:base-14
 
-MAINTAINER shinchven@gmail.com
+LABEL MAINTAINER="shinchven@gmail.com"
 
-RUN curl -fsSL https://get.docker.com | bash -s docker \
-&& curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+RUN curl -fsSL https://get.docker.com | bash -s docker \ 
+   && curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
 && chmod +x /usr/local/bin/docker-compose
