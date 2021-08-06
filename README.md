@@ -9,7 +9,7 @@
 
 ## Images
 
-- `base` - The base image
-- `build` - Build and compile
-- `deployment` - Deployment env with pm2-docker and typescript
+- `shinchven/node:14` - The base image
+- `shinchven/node:14-build` - Build and compile
+- `shinchven/node:14-deployment` - Deployment env with pm2-docker and typescript
 
