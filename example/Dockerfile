@@ -17,4 +17,5 @@ EXPOSE 3000
 ARG NODE=production
 ENV NODE_ENV ${NODE}
 
+# Use pm2-docker instead of pm2, otherwise, modules installed via pm2 won't be found.
 CMD ["pm2-docker", "src/index.ts"]

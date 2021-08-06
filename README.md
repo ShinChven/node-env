@@ -10,6 +10,6 @@
 ## Images
 
 - `base` - The base image
-- `build` - 
-- `base` - The base image
+- `build` - Build and compile
+- `deployment` - Deployment env with pm2-docker and typescript
 
