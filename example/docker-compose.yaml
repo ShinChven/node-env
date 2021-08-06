@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  example:
+    image: example
+    container_name: example
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '3000:3000'
