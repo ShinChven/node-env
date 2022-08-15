@@ -9,4 +9,4 @@ RUN apt-get update && apt-get upgrade -y \
 && curl -sL https://deb.nodesource.com/setup_16.x | bash - \
 && apt-get update && apt-get install -y nodejs \
 && apt autoremove -y && corepack enable \
-&& npm i -g shx typescript ts-node
+&& npm i --location=global shx typescript ts-node
