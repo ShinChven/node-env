@@ -1,21 +1,12 @@
 version: '3'
 
 services:
-  base:
-    build:
-      context: .
-      dockerfile: base.Dockerfile
-    image: shinchven/node:16
   build:
-    depends_on:
-      - base
     build:
       context: .
       dockerfile: build.Dockerfile
     image: shinchven/node:16-build
   deployment:
-    depends_on:
-      - base
     build:
       context: .
       dockerfile: deployment.Dockerfile
