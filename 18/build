@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -v
+
+# Use latest ubuntu image
+docker pull ubuntu
+
+# Clean old images
+docker rmi shinchven/node:18 shinchven/node:18-build shinchven/node:18-deployment
+
+# Build `base` image
+docker compose -f docker-compose.base.yml build --no-cache
+
+# Build `build` image and `deployment` image
+docker compose -f docker-compose.yml build --no-cache

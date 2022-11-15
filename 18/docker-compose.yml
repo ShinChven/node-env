@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  build:
+    build:
+      context: .
+      dockerfile: build.Dockerfile
+    image: shinchven/node:18-build
+  deployment:
+    build:
+      context: .
+      dockerfile: deployment.Dockerfile
+    image: shinchven/node:18-deployment
