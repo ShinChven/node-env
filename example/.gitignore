@@ -36,6 +36,7 @@ ehthumbs_vista.db
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+.npmrc
 
 # Windows Installer files
 *.cab
@@ -46,6 +47,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+package-lock.json
 
 ### Node template
 # Logs
