@@ -1,10 +1,10 @@
-name: Build and Push Docker Images
+name: Build and Push Docker 20 Images
 
 on:
   workflow_dispatch:
 
 jobs:
-  build-20:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
