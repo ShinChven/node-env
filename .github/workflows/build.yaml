@@ -45,17 +45,23 @@ jobs:
       - name: Push base image
         uses: docker/build-push-action@v3
         with:
+          context: ./18 
+          file: ./18/base.Dockerfile
           push: true
           tags: shinchven/node:18
 
       - name: Push build image
         uses: docker/build-push-action@v3
         with:
+          context: ./18
+          file: ./18/build.Dockerfile
           push: true
           tags: shinchven/node:18-build
 
       - name: Push deployment image
         uses: docker/build-push-action@v3
         with:
+          context: ./18
+          file: ./18/deployment.Dockerfile
           push: true
           tags: shinchven/node:18-deployment
