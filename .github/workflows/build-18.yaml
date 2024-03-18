@@ -1,4 +1,4 @@
-name: Build and Push Docker 18 Images
+name: Build and Push Node 18 Images
 
 on:
   workflow_dispatch:
