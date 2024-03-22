@@ -1,5 +1,3 @@
-## node:16-build
-
 FROM shinchven/node:20
 
 LABEL MAINTAINER="shinchven@gmail.com"

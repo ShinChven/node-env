@@ -1,4 +1,4 @@
-FROM shinchven/node:18-build
+FROM shinchven/node:20-build
 
 RUN mkdir -p /root/build/app
 WORKDIR /root/build/app

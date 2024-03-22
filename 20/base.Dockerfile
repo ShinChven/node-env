@@ -1,5 +1,3 @@
-## node:16 the base image
-
 FROM ubuntu
 
 LABEL MAINTAINER="shinchven@gmail.com"
