@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  build:
+    build:
+      context: .
+      dockerfile: build.Dockerfile
+    image: shinchven/node:22-build
+  deployment:
+    build:
+      context: .
+      dockerfile: deployment.Dockerfile
+    image: shinchven/node:22-deployment
