@@ -71,11 +71,4 @@ jobs:
           file: ./22/deployment.Dockerfile
           push: true
           tags: shinchven/node:22-deployment
-      
-      - name: Build deployment.ffmpeg image
-        uses: docker/build-push-action@v5
-        with:
-          context: ./22
-          file: ./22/deployment.ffmpeg.Dockerfile
-          push: true
-          tags: shinchven/node:22-deployment.ffmpeg
+
