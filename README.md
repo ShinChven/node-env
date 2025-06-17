@@ -4,6 +4,12 @@
 
 ![](https://img.shields.io/docker/pulls/shinchven/node)
 
+![](https://img.shields.io/docker/image-size/shinchven/node/24-build?label=IMAGE%20SIZE%2024-build)
+![](https://img.shields.io/docker/image-size/shinchven/node/24-deployment?label=IMAGE%20SIZE%2024-deployment)
+
+![](https://img.shields.io/docker/image-size/shinchven/node/22-build?label=IMAGE%20SIZE%2022-build)
+![](https://img.shields.io/docker/image-size/shinchven/node/22-deployment?label=IMAGE%20SIZE%2022-deployment)
+
 ![](https://img.shields.io/docker/image-size/shinchven/node/20-build?label=IMAGE%20SIZE%2020-build)
 ![](https://img.shields.io/docker/image-size/shinchven/node/20-deployment?label=IMAGE%20SIZE%2020-deployment)
 
@@ -19,8 +25,20 @@
 
 ## version
 
-- node: 20.x
+- node: 24.x
 - ubuntu: latest
+
+## node 24 Images
+
+- `shinchven/node:24` - The base image
+- `shinchven/node:24-build` - Build and compile
+- `shinchven/node:24-deployment` - Deployment env with pm2-docker, typescript and mysql-client
+
+## node 22 Images
+
+- `shinchven/node:22` - The base image
+- `shinchven/node:22-build` - Build and compile
+- `shinchven/node:22-deployment` - Deployment env with pm2-docker, typescript and mysql-client
 
 ## node 20 Images
 
@@ -30,9 +48,9 @@
 
 ## node 18 Images
 
-- `shinchven/node:20` - The base image
-- `shinchven/node:20-build` - Build and compile
-- `shinchven/node:20-deployment` - Deployment env with pm2-docker, typescript and mysql-client
+- `shinchven/node:18` - The base image
+- `shinchven/node:18-build` - Build and compile
+- `shinchven/node:18-deployment` - Deployment env with pm2-docker, typescript and mysql-client
 
 ## node 16 Images
 
@@ -45,4 +63,3 @@
 - `shinchven/node:14` - The base image
 - `shinchven/node:14-build` - Build and compile
 - `shinchven/node:14-deployment` - Deployment env with pm2-docker, typescript and mysql-client
-
