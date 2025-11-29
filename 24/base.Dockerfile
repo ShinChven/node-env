@@ -7,4 +7,4 @@ RUN apt-get update && apt-get upgrade -y \
 && curl -sL https://deb.nodesource.com/setup_24.x | bash - \
 && apt-get update && apt-get install -y nodejs \
 && apt autoremove -y && corepack enable \
-&& npm i --location=global shx typescript ts-node
+&& npm i --location=global shx typescript ts-node tsx
